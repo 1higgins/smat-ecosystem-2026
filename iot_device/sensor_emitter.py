@@ -3,15 +3,28 @@ import time
 import random
 
 API_URL = "http://127.0.0.1:8000/lecturas/"
-ESTACION_ID = 1  # Asegúrate de que este ID exista en tu base de datos
-TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzc5OTEyNDc3fQ.JHntK8cx2XYB2QXRAd-481S5TQedzrZt1B_IUco2nsM"  # Reemplaza con el token generado en /token
+TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzc5OTIxMzY4fQ.kIC8Ionwmx8R4QwsmXk5no9W7vqBp1XzLuXfUngE16M"  # Reemplaza con el token generado en /token
 
 def leer_sensor_emulado() -> float:
     return round(random.uniform(10.5, 85.0), 2)
 
+def obtener_ids_estaciones_dinamico():
+    """Consulta al backend las estaciones reales creadas en el sistema"""
+    url = f"http://localhost:8000/estaciones/"
+    try:
+        response = requests.get(url, timeout=5)
+        if response.status_code == 200:
+            # Extraemos la lista de IDs de la respuesta JSON
+            estaciones = response.json()
+            ids = [estacion["id"] for estacion in estaciones]
+            return ids
+        return []
+    except Exception:
+        return []
+
 def enviar_telemetria():
     print(f"\n==================================================")
-    print(f"--- INICIANDO EMISOR IOT: ESTACIÓN ID {ESTACION_ID} ---")
+    print(f"--- BUSCANDO ESTACIONES ---")
     print(f"==================================================")
     
     headers = {
@@ -20,14 +33,23 @@ def enviar_telemetria():
     }
 
     while True:
+
+        lista_estaciones = obtener_ids_estaciones_dinamico()
+
+        if not lista_estaciones:
+            print("No se encontraron estaciones creadas en la aplicacion")
+            time.sleep(5)
+            continue
+
+        estacion_actual = random.choice(lista_estaciones)
         valor = leer_sensor_emulado()
+
         payload = {
             "valor": valor,
-            "estacion_id": ESTACION_ID
+            "estacion_id": estacion_actual
         }
 
         try:
-            # Enviamos la telemetría al endpoint de FastAPI
             response = requests.post(API_URL, json=payload, headers=headers, timeout=5)
             
             if response.status_code == 200 or response.status_code == 201:
@@ -35,7 +57,7 @@ def enviar_telemetria():
             elif response.status_code == 401:
                 print(f"[ERROR] Código 401: Token inválido o expirado. Genera uno nuevo.")
             elif response.status_code == 404:
-                print(f"[ERROR] Código 404: La estación con ID {ESTACION_ID} no existe en la base de datos.")
+                print(f"[ERROR] Código 404: La estación con ID {estacion_actual} no existe en la base de datos.")
             else:
                 print(f"[ERROR] Código {response.status_code} inesperado: {response.text}")
                 

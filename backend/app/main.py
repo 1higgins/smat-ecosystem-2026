@@ -75,3 +75,10 @@ def editar_estacion(
     db.refresh(estacion)
     
     return {"status": "Estación actualizada con éxito", "estacion": estacion}
+
+@app.get("/lecturas/", tags=["Telemetría"])
+def obtener_lecturas(db: Session = Depends(database.get_db)):
+    # Aquí el backend va a la base de datos, extrae las últimas 
+    # lecturas registradas y las devuelve en formato JSON
+    lecturas = db.query(models.LecturaDB).all()
+    return lecturas
