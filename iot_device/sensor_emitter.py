@@ -3,7 +3,7 @@ import time
 import random
 
 API_URL = "http://127.0.0.1:8000/lecturas/"
-TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzc5OTIxMzY4fQ.kIC8Ionwmx8R4QwsmXk5no9W7vqBp1XzLuXfUngE16M"  # Reemplaza con el token generado en /token
+TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzgwNDcwNTQ3fQ.0wL43srW7Fs5rjuTsQZ4WTdtugmJNrKvVA8Y8UGvg9k"  # Reemplaza con el token generado en /token
 
 def leer_sensor_emulado() -> float:
     return round(random.uniform(10.5, 85.0), 2)
@@ -14,7 +14,7 @@ def obtener_ids_estaciones_dinamico():
     try:
         response = requests.get(url, timeout=5)
         if response.status_code == 200:
-            # Extraemos la lista de IDs de la respuesta JSON
+            # Extraemos la lista de ids de la respuesta JSON
             estaciones = response.json()
             ids = [estacion["id"] for estacion in estaciones]
             return ids
