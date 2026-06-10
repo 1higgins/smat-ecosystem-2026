@@ -3,7 +3,7 @@ import time
 import random
 
 API_URL = "http://127.0.0.1:8000/lecturas/"
-TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzgwNDcwNTQ3fQ.0wL43srW7Fs5rjuTsQZ4WTdtugmJNrKvVA8Y8UGvg9k"  # Reemplaza con el token generado en /token
+TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzgxMTEyMDQwfQ.D6ohyeBWnaTRP_h5uLlUpCOKRL2XEmcxn2LhhS564QA"  # Reemplaza con el token generado en /token
 
 def leer_sensor_emulado() -> float:
     return round(random.uniform(10.5, 85.0), 2)
