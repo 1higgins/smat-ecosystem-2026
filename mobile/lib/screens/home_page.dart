@@ -1,4 +1,4 @@
-import 'dart:async'; // <--- 1. ¡SUPER IMPORTANTE! Importación necesaria para el Timer
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:mobile/models/estacion.dart';
 import 'package:mobile/services/api_service.dart';
@@ -14,44 +14,73 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late Future<List<Estacion>> _futureEstaciones;
   final ApiService apiService = ApiService();
-  Timer?
-      _refreshTimer; // <--- 2. Variable global para controlar el temporizador automático
+  Timer? _refreshTimer;
+
+  // Manejo de estado limpio en memoria
+  List<Estacion> _estaciones = [];
+  List<dynamic> _lecturas = [];
+  bool _isLoading = true;
+  String? _errorMessage;
 
   @override
   void initState() {
     super.initState();
-    _refreshEstaciones();
+    _cargarTodo();
 
-    // 3. ENTRADA EN TIEMPO REAL (AUTOREFRESCO CADA 3 SEGUNDOS)
-    // Esto fuerza a que se vuelvan a pedir las lecturas a FastAPI sin parpadear la pantalla
+    //Llama a la API en segundo plano sin parpadear la pantalla
     _refreshTimer = Timer.periodic(const Duration(seconds: 3), (timer) {
-      if (mounted) {
-        setState(() {
-          // Re-ejecuta el build() actualizando los FutureBuilder con datos nuevos de Python
-        });
-      }
+      _cargarDatosEnSegundoPlano();
     });
   }
 
   @override
   void dispose() {
-    // 4. MUY CRÍTICO: Limpiamos el Timer al salir o desarmar la pantalla
-    // para evitar fugas de memoria importantes.
     _refreshTimer?.cancel();
     super.dispose();
   }
 
-  void _refreshEstaciones() {
-    setState(() {
-      _futureEstaciones = ApiService().fetchEstaciones();
-    });
+  // Carga inicial
+  Future<void> _cargarTodo() async {
+    try {
+      final estacionesData = await apiService.fetchEstaciones();
+      final lecturasData = await apiService.fetchLecturas();
+      if (mounted) {
+        setState(() {
+          _estaciones = estacionesData;
+          _lecturas = lecturasData;
+          _isLoading = false;
+          _errorMessage = null;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _errorMessage = e.toString();
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  // Trae datos de FastAPI de forma silenciosa cada 3 segundos
+  Future<void> _cargarDatosEnSegundoPlano() async {
+    try {
+      final estacionesData = await apiService.fetchEstaciones();
+      final lecturasData = await apiService.fetchLecturas();
+      if (mounted) {
+        setState(() {
+          _estaciones = estacionesData;
+          _lecturas = lecturasData;
+        });
+      }
+    } catch (e) {
+      debugPrint("Error en autorefresco: $e");
+    }
   }
 
   void _logout() async {
-    _refreshTimer
-        ?.cancel(); // Cancelamos también al cerrar sesión por seguridad
+    _refreshTimer?.cancel();
     await AuthService().logout();
 
     if (!mounted) return;
@@ -62,9 +91,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // ==========================================
-  // DIÁLOGO DE EDICIÓN (Mantenido intacto)
-  // ==========================================
   void _mostrarDialogoEdicion(Estacion estacion) {
     final nombreCtrl = TextEditingController(text: estacion.nombre);
     final ubicacionCtrl = TextEditingController(text: estacion.ubicacion);
@@ -97,7 +123,7 @@ class _HomePageState extends State<HomePage> {
               if (ok) {
                 if (!context.mounted) return;
                 Navigator.pop(context);
-                _refreshEstaciones();
+                _cargarTodo();
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
@@ -110,13 +136,6 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     );
-  }
-
-  // ======================================================================
-  // FUNCIÓN AUXILIAR: Obtiene las lecturas inyectando el Token en tiempo de ejecución
-  // ======================================================================
-  Future<List<dynamic>> _obtenerLecturasAutenticadas() async {
-    return await apiService.fetchLecturas();
   }
 
   @override
@@ -132,147 +151,148 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: FutureBuilder<List<Estacion>>(
-        future: _futureEstaciones,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          } else if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-            return const Center(child: Text('No hay estaciones registradas.'));
-          }
+      // Control de estados visuales principales sin FutureBuilder
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : _errorMessage != null
+              ? Center(child: Text('Error: $_errorMessage'))
+              : _estaciones.isEmpty
+                  ? const Center(child: Text('No hay estaciones registradas.'))
+                  : RefreshIndicator(
+                      onRefresh: _cargarTodo,
+                      child: ListView.builder(
+                        itemCount: _estaciones.length,
+                        itemBuilder: (context, index) {
+                          final estacion = _estaciones[index];
 
-          final estaciones = snapshot.data!;
-          return RefreshIndicator(
-            onRefresh: () async => _refreshEstaciones(),
-            child: ListView.builder(
-              itemCount: estaciones.length,
-              itemBuilder: (context, index) {
-                final estacion = estaciones[index];
+                          // LÓGICA DE FILTRADO DE LECTURAS (Sincronizada en memoria)
+                          String valorTexto = "0.0 cm";
+                          bool esCritico = false;
 
-                // USAMOS LA FUNCIÓN AUTENTICADA EN EL FUTUREBUILDER
-                return FutureBuilder<List<dynamic>>(
-                  future: _obtenerLecturasAutenticadas(),
-                  builder: (context, lecturaSnapshot) {
-                    String valorTexto = "0.0 cm";
-                    bool esCritico = false;
+                          final lecturasDeEstaEstacion = _lecturas.where((l) {
+                            final idEstacionLectura =
+                                l['estacion_id'] ?? l['estacionId'];
+                            return idEstacionLectura.toString() ==
+                                estacion.id.toString();
+                          }).toList();
 
-                    if (lecturaSnapshot.hasData &&
-                        lecturaSnapshot.data!.isNotEmpty) {
-                      // FILTRADO ROBUSTO: Comparación estricta de IDs transformados a String
-                      final lecturasDeEstaEstacion =
-                          lecturaSnapshot.data!.where((l) {
-                        final idEstacionLectura =
-                            l['estacion_id'] ?? l['estacionId'];
-                        return idEstacionLectura.toString() ==
-                            estacion.id.toString();
-                      }).toList();
+                          if (lecturasDeEstaEstacion.isNotEmpty) {
+                            final ultimaLectura = lecturasDeEstaEstacion.last;
+                            final double valor = double.tryParse(
+                                    ultimaLectura['valor'].toString()) ??
+                                0.0;
 
-                      if (lecturasDeEstaEstacion.isNotEmpty) {
-                        // Tomamos la telemetría más reciente generada por sensor_emitter.py
-                        final ultimaLectura = lecturasDeEstaEstacion.last;
-                        final double valor = double.tryParse(
-                                ultimaLectura['valor'].toString()) ??
-                            0.0;
+                            valorTexto = "${valor.toStringAsFixed(1)} cm";
+                            if (valor > 70.0) {
+                              esCritico = true;
+                            }
+                          }
 
-                        valorTexto = "${valor.toStringAsFixed(1)} cm";
-
-                        // CAMBIO DE COLOR DINÁMICO (SI SUPERA LOS 70.0 CM)
-                        if (valor > 70.0) {
-                          esCritico = true;
-                        }
-                      }
-                    }
-
-                    // SWIPE-TO-DISMISS (DESLIZAR PARA BORRAR)
-                    return Dismissible(
-                      key: Key(estacion.id.toString()),
-                      direction: DismissDirection.endToStart,
-                      background: Container(
-                        color: Colors.red,
-                        alignment: Alignment.centerRight,
-                        padding: const EdgeInsets.only(right: 20),
-                        child: const Icon(Icons.delete, color: Colors.white),
-                      ),
-                      onDismissed: (direction) async {
-                        final nombreEstacion = estacion.nombre;
-                        bool ok =
-                            await apiService.eliminarEstacion(estacion.id);
-
-                        if (ok) {
-                          if (!context.mounted) return;
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                                content: Text("$nombreEstacion eliminada")),
-                          );
-                        } else {
-                          _refreshEstaciones();
-                        }
-                      },
-                      child: Card(
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 16, vertical: 6),
-                        color: esCritico ? Colors.red.shade50 : Colors.white,
-                        elevation: 2,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)),
-                        child: ListTile(
-                          contentPadding: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 8),
-                          leading: CircleAvatar(
-                            backgroundColor: esCritico
-                                ? Colors.red.shade100
-                                : Colors.green.shade100,
-                            child: Icon(
-                              Icons.wifi_tethering,
-                              color: esCritico ? Colors.red : Colors.green,
+                          return Dismissible(
+                            key: Key(estacion.id.toString()),
+                            direction: DismissDirection.endToStart,
+                            background: Container(
+                              color: Colors.red,
+                              alignment: Alignment.centerRight,
+                              padding: const EdgeInsets.only(right: 20),
+                              child:
+                                  const Icon(Icons.delete, color: Colors.white),
                             ),
-                          ),
-                          title: Text(
-                            estacion.nombre,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              color: esCritico
-                                  ? Colors.red.shade900
-                                  : Colors.black87,
-                            ),
-                          ),
-                          subtitle: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const SizedBox(height: 4),
-                              Text(
-                                "Valor actual: $valorTexto",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  color: esCritico
-                                      ? Colors.red.shade700
-                                      : Colors.blue.shade700,
+                            onDismissed: (direction) async {
+                              final nombreEstacion = estacion.nombre;
+                              final idEliminar = estacion.id;
+
+                              // 1. ELIMINACIÓN OPTIMISTA: Borramos de la UI instantáneamente
+                              setState(() {
+                                _estaciones
+                                    .removeWhere((e) => e.id == idEliminar);
+                              });
+
+                              // 2. PETICIÓN AL SERVIDOR
+                              bool ok =
+                                  await apiService.eliminarEstacion(idEliminar);
+
+                              if (ok) {
+                                if (!context.mounted) return;
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                      content:
+                                          Text("$nombreEstacion eliminada")),
+                                );
+                              } else {
+                                // Si falla el servidor, restauramos todo para avisar al usuario
+                                if (!context.mounted) return;
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                      content: Text(
+                                          "Error al eliminar del servidor")),
+                                );
+                                _cargarTodo();
+                              }
+                            },
+                            child: Card(
+                              margin: const EdgeInsets.symmetric(
+                                  horizontal: 16, vertical: 6),
+                              color:
+                                  esCritico ? Colors.red.shade50 : Colors.white,
+                              elevation: 2,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12)),
+                              child: ListTile(
+                                contentPadding: const EdgeInsets.symmetric(
+                                    horizontal: 16, vertical: 8),
+                                leading: CircleAvatar(
+                                  backgroundColor: esCritico
+                                      ? Colors.red.shade100
+                                      : Colors.green.shade100,
+                                  child: Icon(
+                                    Icons.wifi_tethering,
+                                    color:
+                                        esCritico ? Colors.red : Colors.green,
+                                  ),
+                                ),
+                                title: Text(
+                                  estacion.nombre,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: esCritico
+                                        ? Colors.red.shade900
+                                        : Colors.black87,
+                                  ),
+                                ),
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      "Valor actual: $valorTexto",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w600,
+                                        color: esCritico
+                                            ? Colors.red.shade700
+                                            : Colors.blue.shade700,
+                                      ),
+                                    ),
+                                    Text(
+                                      estacion.ubicacion,
+                                      style: const TextStyle(
+                                          color: Colors.black54, fontSize: 13),
+                                    ),
+                                  ],
+                                ),
+                                trailing: IconButton(
+                                  icon: const Icon(Icons.edit,
+                                      color: Colors.black45),
+                                  onPressed: () =>
+                                      _mostrarDialogoEdicion(estacion),
                                 ),
                               ),
-                              Text(
-                                estacion.ubicacion,
-                                style: const TextStyle(
-                                    color: Colors.black54, fontSize: 13),
-                              ),
-                            ],
-                          ),
-                          trailing: IconButton(
-                            icon: const Icon(Icons.edit, color: Colors.black45),
-                            onPressed: () => _mostrarDialogoEdicion(estacion),
-                          ),
-                        ),
+                            ),
+                          );
+                        },
                       ),
-                    );
-                  },
-                );
-              },
-            ),
-          );
-        },
-      ),
+                    ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final resultado = await Navigator.push(
@@ -280,7 +300,7 @@ class _HomePageState extends State<HomePage> {
             MaterialPageRoute(builder: (context) => const AddEstacionScreen()),
           );
           if (resultado == true) {
-            _refreshEstaciones();
+            _cargarTodo();
           }
         },
         child: const Icon(Icons.add),

@@ -4,8 +4,6 @@ import '../models/estacion.dart';
 import 'auth_service.dart';
 
 class ApiService {
-  // Nota: 10.0.2.2 es el localhost para el emulador Android.
-  // Si usa Linux Desktop o Web, use 'localhost'.
   final String baseUrl = "http://127.0.0.1:8000";
 
   Future<List<Estacion>> fetchEstaciones() async {
@@ -65,21 +63,20 @@ class ApiService {
 
   Future<List<dynamic>> fetchLecturas() async {
     try {
-      // 1. Recuperamos el token almacenado de forma segura al iniciar sesión
+      // Recuperamos el token almacenado de forma segura al iniciar sesión
       final token = await AuthService().getToken();
 
-      // 2. Hacemos el GET inyectando el Bearer token en las cabeceras
+      // Hacemos el GET inyectando el Bearer token en las cabeceras
       final response = await http.get(
         Uri.parse('$baseUrl/lecturas/'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization':
-              'Bearer $token', // <--- ¡La llave para solucionar el 401!
+          'Authorization': 'Bearer $token',
         },
-      ).timeout(const Duration(seconds: 5));
+      ).timeout(const Duration(seconds: 20));
 
       if (response.statusCode == 200) {
-        // Decodificamos la respuesta JSON (que ahora sí traerá los datos)
+        // Decodificamos la respuesta JSON que traera los datos de las lecturas
         List<dynamic> jsonResponse = json.decode(response.body);
         return jsonResponse;
       } else {

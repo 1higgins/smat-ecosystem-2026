@@ -15,29 +15,24 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _isLoading = false;
 
   void _handleLogin() async {
-  setState(() => _isLoading = true);
-  
-  bool success = await AuthService().login(
-    _userController.text,
-    _passController.text
-  );
-  
-  // ESTA ES LA LÍNEA QUE FALTA PARA QUITAR EL ERROR:
-  if (!mounted) return; 
+    setState(() => _isLoading = true);
 
-  setState(() => _isLoading = false);
-  
-  if (success) {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => const HomePage())
-    );
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Credenciales incorrectas')),
-    );
+    bool success =
+        await AuthService().login(_userController.text, _passController.text);
+
+    if (!mounted) return;
+
+    setState(() => _isLoading = false);
+
+    if (success) {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => const HomePage()));
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Credenciales incorrectas')),
+      );
+    }
   }
-}
 
   @override
   Widget build(BuildContext context) {
@@ -49,21 +44,18 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
-              controller: _userController, 
-              decoration: const InputDecoration(labelText: 'Usuario')
-            ),
+                controller: _userController,
+                decoration: const InputDecoration(labelText: 'Usuario')),
             TextField(
-              controller: _passController, 
-              decoration: const InputDecoration(labelText: 'Contraseña'), 
-              obscureText: true
-            ),
+                controller: _passController,
+                decoration: const InputDecoration(labelText: 'Contraseña'),
+                obscureText: true),
             const SizedBox(height: 30),
             _isLoading
                 ? const CircularProgressIndicator()
                 : ElevatedButton(
-                    onPressed: _handleLogin, 
-                    child: const Text('Iniciar Sesión')
-                  )
+                    onPressed: _handleLogin,
+                    child: const Text('Iniciar Sesión'))
           ],
         ),
       ),

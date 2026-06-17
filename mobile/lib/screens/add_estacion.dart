@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/api_service.dart'; // Ajusta la ruta si es necesario
 
-
 class AddEstacionScreen extends StatefulWidget {
   const AddEstacionScreen({super.key});
 
@@ -18,19 +17,17 @@ class _AddEstacionScreenState extends State<AddEstacionScreen> {
   void _guardar() async {
     if (_formKey.currentState!.validate()) {
       // 1. Iniciamos la petición
-      bool success = await ApiService().crearEstacion(
-        _nombreController.text,
-        _ubicacionController.text
-      );
-      
-      // 2. LA SOLUCIÓN: Verificar si el widget sigue montado antes de usar context
-      if (!mounted) return; 
-      
+      bool success = await ApiService()
+          .crearEstacion(_nombreController.text, _ubicacionController.text);
+
+      if (!mounted) return;
+
       if (success) {
-        Navigator.pop(context, true); // Ahora es seguro
+        Navigator.pop(context, true);
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Error: No autorizado o Servidor caído')),
+          const SnackBar(
+              content: Text('Error: No autorizado o Servidor caído')),
         );
       }
     }
@@ -58,9 +55,7 @@ class _AddEstacionScreenState extends State<AddEstacionScreen> {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: _guardar, 
-                child: const Text('Guardar Estación')
-              )
+                  onPressed: _guardar, child: const Text('Guardar Estación'))
             ],
           ),
         ),
