@@ -1,0 +1,1612 @@
+[2026-06-03 09:40:09] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 197, "timestamp": 1780497609.5003111, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:40:13] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 119, "timestamp": 1780497613.5111082, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:40:17] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 107, "timestamp": 1780497617.518038, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:40:21] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 174, "timestamp": 1780497621.529212, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:40:37] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 166, "timestamp": 1780497637.560086, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:40:51] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 140, "timestamp": 1780497651.592962, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:41:03] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 146, "timestamp": 1780497663.615474, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:41:11] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 109, "timestamp": 1780497671.628452, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:41:19] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 157, "timestamp": 1780497679.64417, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:41:23] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 187, "timestamp": 1780497683.650437, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:41:25] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 133, "timestamp": 1780497685.6557, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:41:27] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 185, "timestamp": 1780497687.6560519, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:41:41] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 186, "timestamp": 1780497701.687488, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:41:53] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 119, "timestamp": 1780497713.7197492, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:41:55] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 190, "timestamp": 1780497715.7251148, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:42:09] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 153, "timestamp": 1780497729.757741, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:42:19] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 110, "timestamp": 1780497739.776951, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:42:48] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 123, "timestamp": 1780497767.840369, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:42:58] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780497777.860022, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:43:06] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 150, "timestamp": 1780497785.878456, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:43:16] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 125, "timestamp": 1780497795.9025831, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:43:50] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 138, "timestamp": 1780497829.9835432, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:44:02] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 178, "timestamp": 1780497842.0110872, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:44:06] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 132, "timestamp": 1780497846.01823, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:44:08] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 136, "timestamp": 1780497848.0235991, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:44:24] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 133, "timestamp": 1780497864.0593789, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:44:26] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 141, "timestamp": 1780497866.065123, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:44:44] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 130, "timestamp": 1780497884.102886, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:45:26] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 185, "timestamp": 1780497926.1909928, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:45:36] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 193, "timestamp": 1780497936.212379, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:45:46] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 170, "timestamp": 1780497946.2288551, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:46:06] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 196, "timestamp": 1780497966.2710989, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:46:22] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 129, "timestamp": 1780497982.298518, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:47:13] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 176, "timestamp": 1780498032.393932, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:47:22] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 118, "timestamp": 1780498042.420495, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:47:48] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 171, "timestamp": 1780498068.478582, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:48:01] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498080.502371, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:48:08] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 134, "timestamp": 1780498088.52405, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:48:14] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 190, "timestamp": 1780498094.535027, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:48:16] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 149, "timestamp": 1780498096.5398011, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:48:26] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 100, "timestamp": 1780498106.5644538, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:48:36] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 180, "timestamp": 1780498116.587571, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:48:40] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 188, "timestamp": 1780498120.5941079, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:48:50] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 109, "timestamp": 1780498130.61815, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:48:54] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 161, "timestamp": 1780498134.62648, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:49:00] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 106, "timestamp": 1780498140.6389601, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:49:11] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 129, "timestamp": 1780498150.6618292, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:49:23] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 148, "timestamp": 1780498162.69294, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:49:28] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 192, "timestamp": 1780498168.705964, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:50:04] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 120, "timestamp": 1780498204.783906, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:17] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 108, "timestamp": 1780498216.811352, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:19] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 164, "timestamp": 1780498218.816855, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:23] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 133, "timestamp": 1780498222.827384, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:41] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 193, "timestamp": 1780498240.867696, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:47] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 165, "timestamp": 1780498246.878409, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:50:53] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 137, "timestamp": 1780498252.894979, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:51:05] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 194, "timestamp": 1780498264.94149, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:51:09] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 166, "timestamp": 1780498268.958016, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:51:11] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 182, "timestamp": 1780498270.966161, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:51:17] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 193, "timestamp": 1780498276.982105, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:51:21] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 189, "timestamp": 1780498280.991901, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:51:23] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 145, "timestamp": 1780498282.998801, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:51:41] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 123, "timestamp": 1780498301.054213, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:51:45] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 170, "timestamp": 1780498305.066109, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:03] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 122, "timestamp": 1780498323.1030731, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:52:15] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 174, "timestamp": 1780498335.127991, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:23] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 116, "timestamp": 1780498343.149548, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:25] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 173, "timestamp": 1780498345.154856, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:31] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 117, "timestamp": 1780498351.168573, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:39] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 167, "timestamp": 1780498359.1821241, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:52:42] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498323.0999298, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:52:53] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 179, "timestamp": 1780498373.2176719, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:53:07] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 188, "timestamp": 1780498387.2569659, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:53:19] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 154, "timestamp": 1780498399.2895548, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:53:27] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 128, "timestamp": 1780498407.3048582, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:53:37] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 178, "timestamp": 1780498417.328358, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:53:45] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 144, "timestamp": 1780498425.350205, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:53:46] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498426.057375, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:53:47] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 113, "timestamp": 1780498427.3557062, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:53:49] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 155, "timestamp": 1780498429.357949, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:53:57] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 116, "timestamp": 1780498437.377666, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:53:59] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498438.8811538, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:06] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498406.969095, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:09] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498410.2297966, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:54:11] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498451.8046603, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:21] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 197, "timestamp": 1780498461.420424, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:24] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498464.935731, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:29] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 168, "timestamp": 1780498467.5226917, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:54:33] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 197, "timestamp": 1780498471.5239563, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:35] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498435.7474573, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:54:35] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 106, "timestamp": 1780498475.4538, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:37] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 150, "timestamp": 1780498477.456222, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:39] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 164, "timestamp": 1780498477.5270355, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:41] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 110, "timestamp": 1780498481.463657, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:54:47] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 119, "timestamp": 1780498487.474515, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:50] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:54:51] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 195, "timestamp": 1780498489.5327811, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:54:54] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498455.1314769, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:54:57] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 148, "timestamp": 1780498497.498017, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:03] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498503.603487, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:03] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 108, "timestamp": 1780498503.5097349, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:10] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498471.0397842, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:16] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:55:25] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 123, "timestamp": 1780498523.5496206, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:55:25] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 159, "timestamp": 1780498525.558378, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:29] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:55:31] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 199, "timestamp": 1780498531.5700219, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:55:33] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 108, "timestamp": 1780498533.570813, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:55:35] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 112, "timestamp": 1780498533.555319, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:55:37] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 142, "timestamp": 1780498535.5564053, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:55:39] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 184, "timestamp": 1780498537.5579224, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:41] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 134, "timestamp": 1780498539.5592859, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:42] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:55:45] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498506.2177703, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:55:51] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 197, "timestamp": 1780498551.6078222, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:01] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498522.2874928, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:05] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 132, "timestamp": 1780498563.5703387, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:05] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 138, "timestamp": 1780498565.635115, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:08] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498528.6378746, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:09] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 113, "timestamp": 1780498569.645663, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:11] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498531.870489, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:20] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498580.6799893, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:27] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498548.258144, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:29] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 117, "timestamp": 1780498587.5823364, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:37] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 182, "timestamp": 1780498597.694863, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:39] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 185, "timestamp": 1780498597.5869963, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:41] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 174, "timestamp": 1780498599.5882585, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:41] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 120, "timestamp": 1780498601.705678, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:44] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 162, "timestamp": 1780498603.7093382, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:45] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 109, "timestamp": 1780498603.5900698, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:56:45] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 131, "timestamp": 1780498605.714675, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:53] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 153, "timestamp": 1780498611.5933943, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:56] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 186, "timestamp": 1780498615.737438, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:56:59] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:57:00] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 185, "timestamp": 1780498619.748563, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:04] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 198, "timestamp": 1780498623.759249, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:09] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 166, "timestamp": 1780498627.5995681, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:11] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 153, "timestamp": 1780498631.776891, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:57:14] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 118, "timestamp": 1780498633.782301, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:57:16] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498596.4603438, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:25] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:57:26] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 198, "timestamp": 1780498645.812299, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:27] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 124, "timestamp": 1780498645.6078813, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:57:34] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 142, "timestamp": 1780498653.824251, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:57:39] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:57:40] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 164, "timestamp": 1780498659.8332548, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:57:43] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 158, "timestamp": 1780498661.6165464, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:44] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 185, "timestamp": 1780498663.841669, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:45] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 180, "timestamp": 1780498663.61725, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:57:50] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 171, "timestamp": 1780498669.8539789, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:58:04] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498644.9731846, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:58:15] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 186, "timestamp": 1780498693.6332815, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:58:18] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498658.5224018, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:58:19] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 104, "timestamp": 1780498697.6354394, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:58:21] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498661.6974776, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:58:28] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 103, "timestamp": 1780498707.933399, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:58:37] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498677.695003, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:58:43] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:58:50] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498690.6672428, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:05] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 151, "timestamp": 1780498743.6608975, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:09] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498749.5844038, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:12] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 154, "timestamp": 1780498752.023861, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:14] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498754.0291479, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:17] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498757.8870637, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:21] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 166, "timestamp": 1780498759.6697798, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:22] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498762.2430143, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:27] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 130, "timestamp": 1780498765.6733768, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:28] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498728.9503403, "valor": "ERROR_SENSOR_ALTA_HUMEDAD", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_ALTA_HUMEDAD', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:29] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498769.1435645, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:31] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 168, "timestamp": 1780498769.6759264, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:34] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 142, "timestamp": 1780498774.0761302, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:35] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 140, "timestamp": 1780498773.678837, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:35] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 09:59:38] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498778.0430272, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:40] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498780.2190492, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:40] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 195, "timestamp": 1780498780.0927072, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:51] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498791.154777, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:53] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498793.3790188, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:54] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498754.685931, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 09:59:56] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 168, "timestamp": 1780498796.132839, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 09:59:57] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 176, "timestamp": 1780498795.6907113, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:00] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 169, "timestamp": 1780498800.142845, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:01] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 10:00:02] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498802.3807673, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:06] TOPICO: unmsm/callao/camara/101/telemetria
+PAYLOAD: {"sensor_id": 101, "timestamp": 1780498767.4048297, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:08] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 161, "timestamp": 1780498808.163875, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:08] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498808.917044, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:10] TOPICO: unmsm/callao/camara/102/telemetria
+PAYLOAD: {"sensor_id": 102, "timestamp": 1780498770.5793223, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:11] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 104, "timestamp": 1780498810.169199, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:12] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 112, "timestamp": 1780498812.173449, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:13] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498813.29905, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:15] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 110, "timestamp": 1780498813.7007203, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:20] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 147, "timestamp": 1780498820.194137, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:21] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 193, "timestamp": 1780498819.7036722, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:23] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 124, "timestamp": 1780498821.7049334, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:24] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498824.6150422, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:27] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498827.0809305, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:31] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 154, "timestamp": 1780498829.7094529, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:35] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 148, "timestamp": 1780498833.7116125, "valor": "ERROR_SENSOR_STRING", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR_STRING', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:35] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498835.5541003, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:37] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 180, "timestamp": 1780498835.712796, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:39] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780498839.7979357, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:39] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780498839.911211, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:00:46] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498846.4827802, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:52] TOPICO: unmsm/callao/camara/camara_01/telemetria
+PAYLOAD: {"sensor_id": 130, "timestamp": 1780498852.262499, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:00:53] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {'sensor_id': 404, 'valor': mal_formado
+ERROR: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+------------------------------------------------------------
+[2026-06-03 10:00:55] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780498855.377245, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
