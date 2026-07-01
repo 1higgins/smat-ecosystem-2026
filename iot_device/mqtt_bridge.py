@@ -8,7 +8,7 @@ MQTT_BROKER = "broker.hivemq.com"
 MQTT_PORT = 1883
 MQTT_TOPIC = "fisi/smat/estaciones/+/lecturas"
 
-API_URL = "http://backend:8000/lecturas/"
+API_URL = "http://127.0.0.1:8000/lecturas/"
 JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbl9maXNpIiwiZXhwIjoxNzgxMTEyMDQwfQ.D6ohyeBWnaTRP_h5uLlUpCOKRL2XEmcxn2LhhS564QA" 
 
 # MEMORIA CACHÉ LOCAL
